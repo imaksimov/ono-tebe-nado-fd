@@ -3,7 +3,6 @@
     grid-template-columns: 1fr min-content 1fr;
     align-items: center;
     padding: 92px 50px;
-    height: 293px;
 }
 .header__links-list {
     display: flex;
@@ -17,7 +16,7 @@
     font-size: 18px;
     line-height: 100%;
     text-decoration: none;
-    border-bottom: 1px solid #000;
+    border-bottom: 1px solid currentColor;
 }
 .header__link.header__link_active {
     border-bottom: none;
@@ -32,17 +31,11 @@
 }
 .address a {
     text-decoration: none;
-    border-bottom: 1px solid #000;
+    border-bottom: 1px solid currentColor;
 }
 .header__address {
     justify-self: end;
     max-width: 240px;
-}
-/* Fix, поднял блоки вверх на 2 пикселя, чтобы соответствовало Perfect Pixel */
-.header__menu,
-.header__address {
-    position: relative;
-    top: -2px;
 }
 .cover {
     padding: 165px 50px 50px;
@@ -107,7 +100,7 @@
     font-size: 22px;
     color: #fff;
     text-transform: uppercase;
-    border: 1px solid #fff;
+    border: 1px solid currentColor;
     width: 256px;
     height: 51px;
     text-align: center;
@@ -177,7 +170,7 @@
     font-size: 20px;
     text-transform: lowercase;
     text-decoration: none;
-    border-bottom: 1px solid #000;
+    border-bottom: 1px solid currentColor;
 }
 .about {
     padding: 153px 24px 180px;
@@ -218,8 +211,7 @@
 .footer {
     display: grid;
     grid-template-columns: 1fr min-content 1fr;
-    height: 180px;
-    padding: 0 50px;
+    padding: 0 50px 84px;
 }
 .footer__menu-list {
     list-style: none;
@@ -232,7 +224,7 @@
     white-space: nowrap;
     text-transform: lowercase;
     text-decoration: none;
-    border-bottom: 1px solid #000;
+    border-bottom: 1px solid currentColor;
 }
 .footer__menu-link.footer__menu-link_active {
     border-bottom: 0;
