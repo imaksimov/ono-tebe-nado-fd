@@ -1,1 +1,248 @@
-/* место для вашего кода */
+.header {
+    display: grid;
+    grid-template-columns: 1fr min-content 1fr;
+    align-items: center;
+    padding: 92px 50px;
+    height: 293px;
+}
+.header__links-list {
+    display: flex;
+    list-style: circle;
+    gap: 32px;
+}
+.header__links-list-item_no-bullit {
+    list-style: none;
+}
+.header__link {
+    font-size: 18px;
+    line-height: 100%;
+    text-decoration: none;
+    border-bottom: 1px solid #000;
+}
+.header__link.header__link_active {
+    border-bottom: none;
+}
+.header__logo {
+    width: 136px;
+}
+.address {
+    font-style: normal;
+    font-size: 18px;
+    line-height: 24px;
+}
+.address a {
+    text-decoration: none;
+    border-bottom: 1px solid #000;
+}
+.header__address {
+    justify-self: end;
+    max-width: 240px;
+}
+/* Fix, поднял блоки вверх на 2 пикселя, чтобы соответствовало Perfect Pixel */
+.header__menu,
+.header__address {
+    position: relative;
+    top: -2px;
+}
+.cover {
+    padding: 165px 50px 50px;
+    background-image: url("../images/cover.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.overlay {
+    background: rgb(0,0,0, 0.6);
+    position: absolute;
+    inset: 0;
+}
+.cover__title {
+    color: #fff;
+    font-weight: 700;
+    font-size: 100px;
+    line-height: 115px;
+
+    text-transform: uppercase;
+    position: relative;
+    z-index: 10;
+}
+.cover__title .aligned-text,
+.cover__title .aligned-text_center,
+.cover__title .aligned-text_right {
+    display: block;
+}
+.cover__title .aligned-text_center {
+    padding-top: 20px;
+    text-align: center;
+}
+.cover__title .aligned-text_right {
+    padding-top: 20px;
+    text-align: right;
+}
+.letter-spacing-extended {
+    letter-spacing: 30px;
+}
+.no-letter-spacing {
+    letter-spacing: 0;
+}
+.cover__description {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 106px;
+    position: relative;
+    z-index: 10;
+}
+.cover__description-text {
+    color: #fff;
+    font-size: 22px;
+    line-height: 28px;
+    text-transform: uppercase;
+    word-spacing: 19px;
+}
+.bet-button {
+    background: transparent;
+    font-weight: 500;
+    font-size: 22px;
+    color: #fff;
+    text-transform: uppercase;
+    border: 1px solid #fff;
+    width: 256px;
+    height: 51px;
+    text-align: center;
+    cursor: pointer;
+}
+.lots {
+    padding: 180px 24px 0;
+}
+.lots__heading {
+    padding-left: 40px;
+    padding-bottom: 27px;
+}
+.lots__card-list {
+    list-style: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 25px;
+}
+.lots__card-list-item {
+    min-height: 596px;
+    position: relative;
+}
+.card-link {
+    display: block;
+    height: 100%;
+    text-decoration: none;
+}
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 48px 40px;
+}
+.card.card_type_film {
+    background-image: url("../images/card-lot-01.jpg");
+}
+.card.card_type_book {
+    background-image: url("../images/card-lot-02.jpg");
+}
+.card.card_type_picture {
+    background-image: url("../images/card-lot-03.jpg");
+}
+.card__title {
+    font-size: 22px;
+    line-height: 120%;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: underline;
+    color: #fff;
+    position: relative;
+    z-index: 10;
+}
+.card__text {
+    font-size: 20px;
+    line-height: 120%;
+    color: #fff;
+    position: relative;
+    z-index: 10;
+}
+.lots__look-more-link {
+    display: inline-block;
+    margin: 30px 40px 0;
+    font-size: 20px;
+    text-transform: lowercase;
+    text-decoration: none;
+    border-bottom: 1px solid #000;
+}
+.about {
+    padding: 153px 24px 180px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 25px;
+}
+.about__column-left {
+    justify-self: center;
+}
+.about__column-right {
+    grid-column-start: 2;
+    grid-column-end: 4;
+}
+.about__logo {
+    width: 240px;
+    height: 240px;
+    background-color: #000000;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.about__logo-image {
+    width: 148px;
+}
+.about__title {
+    line-height: 100%;
+    padding: 104px 0;
+}
+.about__text {
+    font-size: 20px;
+    line-height: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+.footer {
+    display: grid;
+    grid-template-columns: 1fr min-content 1fr;
+    height: 180px;
+    padding: 0 50px;
+}
+.footer__menu-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.footer__menu-link {
+    font-size: 18px;
+    white-space: nowrap;
+    text-transform: lowercase;
+    text-decoration: none;
+    border-bottom: 1px solid #000;
+}
+.footer__menu-link.footer__menu-link_active {
+    border-bottom: 0;
+}
+.footer__social-list {
+    list-style: none;
+    display: flex;
+    gap: 48px;
+    justify-self: end;
+}
+.footer__social-list-item {
+    width: 48px;
+}
